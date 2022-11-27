@@ -5,7 +5,7 @@
 }
 
 /*Nav*/
-Nav {
+nav {
   background-color: #212429;
   height: 117px;
   display: flex;
@@ -13,23 +13,24 @@ Nav {
   align-items: center;
   width: 100%;
   font-size: 20px;
+  max-width: center;
+  margin: 0 auto;
 }
 
 nav li a {
   text-decoration: none;
   color: #d1e0fb;
+  transition: 1s;
 }
 
 nav #button {
   font-size: 20px;
-  border: none;
   text-decoration: none;
   color: #d1e0fb;
-}
-
-nav #button:hover {
   background-color: #377dff;
-  border: none;
+  border-radius: 12px;
+  padding: 15px 35px;
+  align-items: center;
 }
 
 #logo {
@@ -46,17 +47,34 @@ nav #button:hover {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   gap: 70.4px;
   list-style: none;
   font-weight: bold;
   font-size: 20px;
 }
 
+.nav-links a:hover {
+  color: #377dff;
+  transition: ease-in-out 0.5s;
+}
+
 /*Header*/
 header {
   background-color: #212429;
-  height: 900px;
+}
+
+.button {
+  font-family: "Montserrat";
+}
+
+.button a {
+  margin: 2px;
+}
+
+.button a:hover {
+  background-color: #377dff;
+  padding: 13px 37px;
 }
 
 .content {
@@ -72,7 +90,7 @@ header {
 }
 
 .content h3 {
-  font-size: 3rem;
+  font-size: 40px;
   color: #ffffff;
   font-family: 600;
   padding-bottom: 34px;
@@ -82,7 +100,7 @@ header {
   color: #d1e0fb;
   font-size: 20px;
   font-weight: 600;
-  padding-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 .content a {
@@ -97,11 +115,12 @@ header {
 }
 
 #rectangle {
-  width: 100%;
-  align-items: center;
-  display: flex;
-  position: relative;
-  margin-bottom: 11px;
+  background-image: url(/assets/imgs/Rectangle\ 1.png),
+    url(/assets/imgs/Rectangle\ 30.png);
+  background-position: 40% 42%, 92% 90%;
+  background-repeat: no-repeat, no-repeat;
+  max-width: fit-content;
+  margin: 0 auto;
 }
 
 #flex-content {
@@ -181,7 +200,7 @@ header {
 }
 
 .key-features-content {
-  max-width: 378px;
+  max-width: 348px;
   margin: auto;
 }
 
@@ -189,6 +208,7 @@ header {
   color: #fafafa;
   font-size: 25px;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .key-features-content p {
@@ -203,13 +223,12 @@ footer {
   background: linear-gradient(#191b1f, #1a1c20);
   display: flex;
   padding-top: 165px;
-  margin: auto;
-  max-width: 1080;
-  margin: auto;
+  padding-bottom: 255px;
 }
 
 .some {
-  margin-left: 255px;
+  max-width: 1080px;
+  margin: auto;
 }
 
 .some p {
@@ -217,12 +236,12 @@ footer {
   font-size: 20px;
   font-weight: 600;
   width: 371px;
+  margin-bottom: 24px;
 }
 
 .contact {
   color: white;
   width: 165px;
-  height: 296px;
   margin-right: 82px;
 }
 
@@ -243,6 +262,9 @@ footer {
   margin-left: 125px;
 }
 
-#somelogos {
-  margin-top: 24px;
+p,
+h1,
+h5,
+h3 {
+  font-family: "Montserrat";
 }
