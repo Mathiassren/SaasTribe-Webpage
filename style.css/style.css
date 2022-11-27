@@ -15,6 +15,8 @@ nav {
   font-size: 20px;
   max-width: center;
   margin: 0 auto;
+  position: fixed;
+  opacity: 90%;
 }
 
 nav li a {
@@ -267,4 +269,11 @@ h1,
 h5,
 h3 {
   font-family: "Montserrat";
+}
+
+/* For 1024 Resolution */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    zoom: 80%;
+  }
 }
